@@ -9,11 +9,21 @@ Customize or spoof Discord VSCode RPC using Discord Presence extension by Crawl.
 2. Find and open extension folder on your operating system:
   - **Windows:** Press `Win + R` to open Run window, paste `%USERPROFILE%\.vscode\extensions` and hit enter.
   - **Linux and macOS:** Open terminal and run `cd ~/.vscode/extensions`.
+
 3. Find Crawl's Discord Presence extension folder, it should be named something along the lines of `icrawl.discord-vscode-<version>`.
+
 4. Inside the folder, navigate to `dist/extension.cjs` and open the file via VSCode.
+
 5. Search and replace:
-Search: `startTimestamp: config2["removeTimestamp" /* RemoveTimestamp */] ? void 0 : previous.startTimestamp ?? Date.now()`
-Replace: `startTimestamp: config2["removeTimestamp" /* RemoveTimestamp */] ? void 0 : previous.startTimestamp ?? Date.now() - 359996401000`
+Search: 
+```
+startTimestamp: config2["removeTimestamp" /* RemoveTimestamp */] ? void 0 : previous.startTimestamp ?? Date.now()
+```
+Replace with: 
+```
+startTimestamp: config2["removeTimestamp" /* RemoveTimestamp */] ? void 0 : previous.startTimestamp ?? Date.now() - 359996401000
+```
+
 6. Reload window or restart VSCode and confirm the modified rich presence:
   <img width="665" height="550" alt="image" src="https://github.com/user-attachments/assets/fe0c03f9-c40e-4847-9895-bbe6c2ea2056" />
 

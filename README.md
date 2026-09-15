@@ -15,6 +15,7 @@ Modify or spoof Discord VSCode RPC using Discord Presence extension by Crawl.
 4. Inside the folder, navigate to `dist/extension.cjs` and open the file via VSCode.
 
 5. Search and replace:
+
 Search: 
 ```
 startTimestamp: config2["removeTimestamp" /* RemoveTimestamp */] ? void 0 : previous.startTimestamp ?? Date.now()

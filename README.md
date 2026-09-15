@@ -1,6 +1,6 @@
 # vscode-99999-hours
 
-Customize or spoof Discord VSCode RPC using Discord Presence extension by Crawl.
+Modify or spoof Discord VSCode RPC using Discord Presence extension by Crawl.
 
 ## Steps to reproduce
 1. Install the extension "Discord Presence" by Crawl on VSCode.
